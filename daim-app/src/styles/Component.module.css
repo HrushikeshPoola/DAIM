@@ -1,0 +1,38 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    flex: 1 1 auto;
+    width: 100%;
+    min-height: 00px;
+    font-size: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.Row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+}
+
+.Row > div, .Row > input, .Row > button {
+    min-width: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+.Row > input {
+    min-width: 250px; 
+}
+.Table {
+    display: flex;
+    text-align: left;
+    width: 100%;
+}
+
+.Table :global(.rc-table-cell){
+    padding: 10px;
+}

@@ -1,0 +1,51 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* height: 100%; */
+    height: calc(100vh - 67px);
+
+}
+
+.subNavHeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.subNavHeaderLinksContainer {
+    height: 100%;
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: left;
+}
+
+.SubTabContentContainer {
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 0px;
+}
+:global(.SubNavbarLink) {
+    display: inline;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #566271;
+    /* font-family: "ProximaNovaRegular"; */
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+    margin-right: 40px;
+    text-decoration: none;
+    position: relative;
+}
+
+
+:global(.SubNavbarLinkActive) {
+    color: #0d6efd;
+    /* font-family: 'ProximaNovaSemiBold'; */
+}

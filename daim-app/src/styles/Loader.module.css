@@ -1,0 +1,52 @@
+.AppLoader {
+    height: 90%;
+}
+.LoadingContainer {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.LoadingIndicator {
+    position: relative;
+}
+
+@keyframes rotation {
+    to {   
+        -webkit-transform:rotate(1turn);
+        transform:rotate(1turn)
+    }
+}
+
+.LoadingIndicator:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: -100px;
+    content: "";
+    animation: rotation 1s infinite linear,opacity .5s;
+    opacity: 1;
+    border: 2px solid rgba(85,85,85,.1);
+    border-top-color: rgba(0,0,0,.6);
+    border-radius: 100%;
+}
+
+.LoadingIndicator:after {
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "Waiting for metamask connection";
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #011c48;
+}
