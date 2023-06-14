@@ -1,5 +1,5 @@
 # DAIM
-
+[Link](daim-2297c.web.app/startups)
 ### 1. About
 This project aims to enable startups to create and issue Non-Fungible Tokens (NFTs) tailored for venture capitalists (VCs) to buy and trade. By leveraging the ERC721 standard on the Ethereum blockchain, the project develops a comprehensive solution that includes smart contract deployment, token minting, and a user-friendly platform. Startups can tokenize their equity or other digital assets, allowing VCs to purchase and trade these NFTs. The project focuses on ensuring security, transparency, and compliance, providing a trusted platform for startups and VCs to engage in token-based investment and trading activities
 
